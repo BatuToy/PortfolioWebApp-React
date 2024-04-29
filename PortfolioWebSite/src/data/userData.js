@@ -81,7 +81,7 @@ export const userData =
         },
     ],
     socaialMedia: {
-        linkedIn: "https://linkedin.com/userName",
+        linkedIn: "www.linkedin.com/in/batuhan-toy-6a42a5216",
         github: "https://github.com/BatuToy",
         instagram: "https://www.instagram.com/batuhannnes",
         twitter: "https://twitter.com/Neandartelmafy1"
