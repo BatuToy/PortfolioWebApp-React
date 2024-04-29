@@ -1,0 +1,7 @@
+.projects{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
