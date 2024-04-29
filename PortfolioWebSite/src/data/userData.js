@@ -1,13 +1,14 @@
 import img from "../assets/avatar.jpeg"
+import avatar from "../assets/Batu|Avatar.jpg"
 
 export const userData = 
 {
-    profile: img,
+    profile: avatar,
     name: "Batuhan Toy",
     phone: "+90 (505) 663 40 81",
     mail: "batuhan_toy@hotmail.com",
     adress: "Izmir/Manisa",
-    website: "",
+    website: "https://batutoy.github.io/PortfolioWebApp-React/",
     role: "Backend Engineer",
     skills: [".NET", "Domain Driven Design", "React", "LTE", "5G", "RabbitMq",],
     about: "I am a third-grade software engineering student aiming to develop myself in the fields of artificial intelligence, web development and wireless network. My main purpose is actively work on innovative and interesting projects by focusing on .NET and React. I also interested in projects that will be submitted to TÜBİTAK which is find the shortest path on different topologies. In my long-term plans i specialize in web backend development and eventually become a full-stack developer by learning React. Throughout these endeavors, I also aspire to closely follow the industry's advancements and integrate my projects with machine learning and deep learning technologies to develop solution-oriented approaches. Currently my focus topics: ReactNative/CleanArchitecture(DDD)/.NET/LTE/5G and React.js. Furthermore, I aim to enhance my skills in effective communication and active participation with team." ,

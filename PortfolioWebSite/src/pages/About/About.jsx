@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flex, Typography } from 'antd';
-import { FaLocationDot, FaMessage, FaPhone } from 'react-icons/fa6';
+import { FaGlobe, FaLocationDot, FaMessage, FaPhone } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 
 import PageTitle from '../../components/PageTitle/PageTitle';
@@ -58,6 +58,10 @@ const About = () => {
                 <Flex align='center' gap={10} >
                   <FaLocationDot className='about-icon' />
                   <Text>{userData.adress}</Text>
+                </Flex>
+                <Flex align='center' gap={10} >
+                  <FaGlobe className='about-icon' />
+                  <Text>{userData.website}</Text>
                 </Flex>
               </Flex>
             </Flex>
