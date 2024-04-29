@@ -16,7 +16,7 @@ const items = [
         icon: <AppstoreOutlined />,
     },
     {
-        label: <Link to="/contacts">Contact</Link>,
+        label: <Link to="/contact">Contact</Link>,
         key: 'contact',
         icon: <MessageOutlined />,
     },
