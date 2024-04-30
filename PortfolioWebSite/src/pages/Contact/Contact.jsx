@@ -6,6 +6,8 @@ import PageTitle from '../../components/PageTitle/PageTitle';
 import './Contact.css';
 import { Secrets } from '../../data/Secrets';
 import emailjs from '@emailjs/browser';
+import { validateEmail, validateMessage, validateName } from '../../Validations/MailValidator';
+
 
 const Contact = () => {
   const [form] = Form.useForm();
@@ -39,13 +41,13 @@ const Contact = () => {
       >
         <Flex align='center' justify='center'>
           <Form layout='vertical' className='contact-form' form={form} onFinish={sendEmail}>
-            <Form.Item label="Full Name" name='user_name'>
+            <Form.Item label="Full Name" name='user_name' rules={[{ required: true, validator: validateName }]}>
               <Input size='large' placeholder='Enter your name' />
             </Form.Item>
-            <Form.Item label="Email" name='user_email'>
+            <Form.Item label="Email" name='user_email' rules={[{ required: true, validator: validateEmail }]}>
               <Input size='large' placeholder='Enter your email' />
             </Form.Item>
-            <Form.Item label="Message" name='message'>
+            <Form.Item label="Message" name='message' rules={[{ required: true, validator: validateMessage }]}>
               <Input.TextArea style={{ height: "100px" }} size='large' placeholder='Type your message here!' />
             </Form.Item>
             <Button icon={<FiSend />} type='primary' size='large' htmlType="submit">
@@ -59,3 +61,5 @@ const Contact = () => {
 }
 
 export default Contact;
+
+
