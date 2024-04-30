@@ -59,12 +59,6 @@ const Projects = () => {
                     <Tooltip title={userData.name}>
                       <Avatar src={userData.profile} />
                     </Tooltip>
-                    <Tooltip title={userData.name}>
-                      <Avatar src={userData.profile} />
-                    </Tooltip>
-                    <Tooltip title={userData.name}>
-                      <Avatar src={userData.profile} />
-                    </Tooltip>
                   </Avatar.Group>
                   <Tag color={project.color}>{project.time}</Tag>
                 </Flex>

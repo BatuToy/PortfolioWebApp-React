@@ -9,19 +9,10 @@ export const userData =
     mail: "batuhan_toy@hotmail.com",
     adress: "Izmir/Manisa",
     website: "https://batutoy.github.io/PortfolioWebApp-React/",
-    role: "Backend Engineer",
+    role: "Fullstack Developer",
     skills: [".NET", "Domain Driven Design", "React", "LTE", "5G", "RabbitMq",],
     about: "I am a third-grade software engineering student aiming to develop myself in the fields of artificial intelligence, web development and wireless network. My main purpose is actively work on innovative and interesting projects by focusing on .NET and React. I also interested in projects that will be submitted to TÜBİTAK which is find the shortest path on different topologies. In my long-term plans i specialize in web backend development and eventually become a full-stack developer by learning React. Throughout these endeavors, I also aspire to closely follow the industry's advancements and integrate my projects with machine learning and deep learning technologies to develop solution-oriented approaches. Currently my focus topics: ReactNative/CleanArchitecture(DDD)/.NET/LTE/5G and React.js. Furthermore, I aim to enhance my skills in effective communication and active participation with team." ,
     projects: [
-        {
-            title: "BuberDinner|Clean Architecture|DDD",
-            description: "BuberDinner is a robust software application designed following the principles of Clean Architecture and Domain-Driven Design (DDD) to ensure scalability, maintainability, and business domain relevance. This project mimics a dinner booking platform, facilitating seamless interactions between users and restaurants. Key features include user registration, restaurant listings, meal selection, and booking management",
-            progress: "70",
-            time: "",
-            startDate: "",
-            color: "red",
-            bg: "#C0D6E8"
-        },
         {
             title: "Investment Calculator",
             description: "Built with React.js, employing components, hooks, and props to dynamically compute investment returns.",
@@ -56,6 +47,15 @@ export const userData =
             time: "15 days",
             startDate: "",
             color: "grey",
+            bg: "#C0D6E8"
+        },
+        {
+            title: "BuberDinner|Clean Architecture|DDD",
+            description: "BuberDinner is a robust software application designed following the principles of Clean Architecture and Domain-Driven Design (DDD) to ensure scalability, maintainability, and business domain relevance. This project mimics a dinner booking platform, facilitating seamless interactions between users and restaurants. Key features include user registration, restaurant listings, meal selection, and booking management",
+            progress: "70",
+            time: "",
+            startDate: "",
+            color: "red",
             bg: "#C0D6E8"
         },
         {
