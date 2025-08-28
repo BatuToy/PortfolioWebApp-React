@@ -6,24 +6,24 @@ import './Navbar.css';
 
 const items = [
     {
-        label: <Link to="/">About</Link>,
-        key: 'about',
+        label: <Link to="/PortfolioWebApp-React/about">About</Link>,
+        key: 'PortfolioWebApp-React/about',
         icon: <MailOutlined />,
     },
     {
-        label: <Link to="/projects">Projects</Link>,
-        key: 'projects',
+        label: <Link to="PortfolioWebApp-React/projects">Projects</Link>,
+        key: 'PortfolioWebApp-React/projects',
         icon: <AppstoreOutlined />,
     },
     {
-        label: <Link to="/contact">Contact</Link>,
-        key: 'contact',
+        label: <Link to="/PortfolioWebApp-React/contact">Contact</Link>,
+        key: 'PortfolioWebApp-React/contact',
         icon: <MessageOutlined />,
     },
 ];
 
 const Navbar = () => {
-    const [current, setCurrent] = useState('');
+    const [current, setCurrent] = useState("");
 
     const handleClick = (e) => {
         setCurrent(e.key);  

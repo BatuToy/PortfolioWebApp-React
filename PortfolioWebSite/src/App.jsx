@@ -15,9 +15,9 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Main />}>
-            <Route index element={<About />} />
-            <Route path="/projects" index element={<Projects/>} />
-            <Route path="/contact" index element={<Contact/>} />
+            <Route path = "/PortfolioWebApp-React/about" index element={<About />} />
+            <Route path="/PortfolioWebApp-React/projects" index element={<Projects/>} />
+            <Route path="/PortfolioWebApp-React/contact" index element={<Contact/>} />
           </Route>
         </Routes>
         <ProfileCard />

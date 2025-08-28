@@ -13,8 +13,6 @@ const ProfileCard = () => {
     <Flex align='center' vertical gap={15} className='profile-card'>
       <UserInfo />
       <Skills />
-      <SocialMedia />
-
       <Button 
           icon= {<FaDownload/>} 
           size='large' 

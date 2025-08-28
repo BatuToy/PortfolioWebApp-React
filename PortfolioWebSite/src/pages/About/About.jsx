@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Typography } from 'antd';
+import {DatePicker, Flex, Typography} from 'antd';
 import { FaGlobe, FaLocationDot, FaMessage, FaPhone } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 
@@ -9,10 +9,11 @@ import Skills from '../../components/Skills/Skills';
 
 import { userData } from '../../data/userData';
 import './About.css'
+import {BsCalendarDate} from "react-icons/bs";
 
 const { Title, Text, Paragraph } = Typography;
 const About = () => {
-  const { education } = userData;
+
   return (
     <>
       <PageTitle pageTitle="About Me" />
@@ -27,7 +28,7 @@ const About = () => {
             align='center'
             className='grey-bg padding-10 user-personel'>
             <img
-              src={userData.profile}
+              src={userData.profile || ''}
               alt={userData.name}
               className='user-image' />
             <Flex vertical gap={30}>
@@ -39,7 +40,6 @@ const About = () => {
                   {userData.role}
                 </Text>
               </Flex>
-
               <SocialMedia about={true} />
             </Flex>
           </Flex>
@@ -57,7 +57,7 @@ const About = () => {
                 </Flex>
                 <Flex align='center' gap={10} >
                   <FaLocationDot className='about-icon' />
-                  <Text>{userData.adress}</Text>
+                  <Text>{userData.address}</Text>
                 </Flex>
                 <Flex align='center' gap={10} >
                   <FaGlobe className='about-icon' />
@@ -78,18 +78,19 @@ const About = () => {
             </Text>
             <Flex gap={5} vertical className='padding-10'>
               {
-                education.map((education, index) => (
+                userData.education.map((e, i) => (
                   <Flex
-                    key={index}
+                    key={i}
                     gap={10}
                     align='center'
                     justify='space-between'
                     wrap='wrap'>
                     <Flex gap={10}>
-                      <Text strong>{education.university}</Text>
-                      <Text type='secondary'>{education.degree}</Text>
+                      <Text strong>{e.university}</Text>
+                      <Text type='primary'>{e.degree}</Text>
+                      <Text strong={true} type='primary'>{e.note}</Text>
                     </Flex>
-                    <Text strong type='secondary' italic>{education.duration}</Text>
+                    <Text strong={true} type='danger' italic>{e.duration}</Text>
                   </Flex>
                 ))
               }
